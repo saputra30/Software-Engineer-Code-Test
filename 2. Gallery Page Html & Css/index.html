@@ -1,0 +1,189 @@
+<html>
+	<head><title>Makanan</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+
+			.topnav {
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+
+			.topnav a.active {
+			  background-color: #4CAF50;
+			  color: white;
+			}
+
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+  				margin: 0;
+			}
+			.header {
+			  padding: 60px;
+			  text-align: center;
+			  background: #1abc9c;
+			  color: white;
+			  font-size: 30px;
+			  background-image: url("makanan.jpg");
+			  margin: 40px;
+			}
+			.content {padding:20px;}
+
+
+
+		div.gallery {
+		  margin: 30px;
+		  border: 1px solid #ccc;
+		  float: left;
+		  width: 180px;
+		  border-style: solid;
+		}
+
+		div.gallery:hover {
+		  border: 1px solid #777;
+		}
+
+		div.gallery img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		div.desc {
+		  padding: 15px;
+		  text-align: center;
+		}
+
+		input[type=text], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+
+		input[type=submit] {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+
+
+		.container {
+		  border-radius: 50px;
+		  padding: 10px;
+		  padding-top: 400px;
+		  margin: 50px
+		}
+
+
+		.column {
+		  float: left;
+		  width: 50%;
+		  margin-top: 6px;
+		  padding: 20px;
+		}
+
+
+		.row:after {
+		  display: table;
+		  clear: both;
+		}
+
+		@media screen and (max-width: 600px) {
+		  .column, input[type=submit] {
+		    width: 100%;
+		    margin-top: 0;
+		  }
+		}
+		</style>
+	</head>
+	<body>
+
+	<div class="topnav">
+	 	 <a class="active" href="#home">Home</a>
+	 	 <a href="#contact">Contact</a>
+	 	 <a href="#about">About</a>
+	</div>
+
+	<div class="header">
+  		<h1>Makanan</h1>
+  		<p>Nusantara</p>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="bakso.jpg">
+	    <img src="bakso.jpg" alt="Bakso" width="600" height="400">
+	  </a>
+	  <div class="desc">Bakso</div>
+	  <p><center> Bakso merupakan makanan berbuah yang sangat digemari seluruh warga indonesia, bakso biasanya menggunakan bahan dasar daging sapi</center></p>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="mie.jpg">
+	    <img src="mie.jpg" alt="mie" width="600" height="400">
+	  </a>
+	  <div class="desc">Mie Goreng</div>
+	  <p><center>Mie goreng merupakan makanan yang cocok dimakan saaat makan malam, dan biasanya dicampur dengan berbagai toping</center></p>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="sate.jpg">
+	    <img src="sate.jpg" alt="sate" width="600" height="400">
+	  </a>
+	  <div class="desc">Sate</div>
+	  <p><center>Sate merupakan makanan berupa daging yang ditusuk dengan bambu, biasanya menggunakan daging ayam, kambing, dan sapi, disajikan dengan sambal kacang dan sambal kecap</center></p>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="bakwan.jpg">
+	    <img src="bakwan.jpg" alt="Bakwan" width="600" height="400">
+	  </a>
+	  <div class="desc">Bakwan</div>
+	  <p><center>Bakwan merupakan salah satu gorengan yang khas di Indonesia, biasanya berbahan dasar sayuran dan tepung</center></p>
+	</div>
+	<br>
+	<div class="container">
+	  <div style="text-align:center">
+	    <h2>Contact</h2>
+	  </div>
+	  	<div class="row">
+	    <div class="column">
+	      <form action="">
+	        <label for="fname">First Name</label>
+	        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	        <label for="lname">Last Name</label>
+	        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	        <label for="region">Region</label>
+	        <select id="region" name="region">
+	          <option value="Jakarta">Jakarta</option>
+	          <option value="Jogja">Jogja</option>
+	          <option value="Bali">Bali</option>
+	        </select>
+	        <label for="subject">Subject</label>
+	        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+	        <input type="submit" value="SEND">
+	      </form>
+	    </div>
+	  </div>
+	</div>
+
+	</body>
+</html>
